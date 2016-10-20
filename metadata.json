@@ -1,0 +1,15 @@
+{
+  "name": "starting-base",
+  "version": "0.0.1",
+  "author": "Puppet Module Generate",
+  "summary": "This is the starting point for module builds going forward.",
+  "license": "Apache-2.0",
+  "source": "ssh://tfs-svm@tfs-svm.visualstudio.com:22/BRMS-Puppet-Module/_git/Puppet-Base-Module",
+  "project_page": "https://docs.puppet.com/puppet/latest/reference/modules_fundamentals.html#writing-modules",
+  "issues_url": null,
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ],
+  "data_provider": null
+}
+
