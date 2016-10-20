@@ -1,0 +1,19 @@
+Facter.add(:total_free_memory_mb, :type => :aggregate) do
+  chunk(:physical_memory) do
+    Facter.value(:memoryfree_mb)
+  end
+
+  chunk(:virtual_memory) do
+    Facter.value(:swapfree_mb)
+  end
+
+  aggregate do |chunks|
+    # The return value for this block will determine the value of the fact.
+    sum = 0
+    chunks.each_value do |i|
+      sum += i
+    end
+
+    sum
+  end
+end

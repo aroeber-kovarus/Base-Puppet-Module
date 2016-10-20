@@ -1,0 +1,1 @@
+example.epp - A manifest can render this template with epp('my_module/component.epp').
